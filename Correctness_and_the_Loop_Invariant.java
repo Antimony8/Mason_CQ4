@@ -7,7 +7,7 @@ public class Solution {
         for (int i = 1; i < A.length; i++) {
             int value = A[i];
             int j = i - 1;
-            while (j >= 0 && A[j] > value) {  // Change the condition to j >= 0
+            while (j >= 0 && A[j] > value) {  // Change the condition to j >= 0 to make sure it doesn't go out of bounds
                 A[j + 1] = A[j];
                 j = j - 1;
             }
@@ -21,7 +21,7 @@ public class Solution {
         for (int n : ar) {
             System.out.print(n + " ");
         }
-        System.out.println();  // Add a new line after printing the array
+        System.out.println();  // Add a new line after printing to match the expected printing format
     }
 
     public static void main(String[] args) {
